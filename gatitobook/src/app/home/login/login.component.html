@@ -2,11 +2,21 @@
 
 <form class="form mt-4" (ngSubmit)="login()">
   <div class="form-group">
-    <input type="text" class="form-control" placeholder="Usuário" [(ngModel)]="usuario" name="usuario">
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Usuário"
+      [(ngModel)]="usuario"
+      name="usuario">
   </div>
 
   <div class="form-group">
-    <input type="password" class="form-control" placeholder="Senha" [(ngModel)]="senha" name="senha">
+    <input
+      type="password"
+      class="form-control"
+      placeholder="Senha"
+      [(ngModel)]="senha"
+      name="senha">
   </div>
 
   <button type="submit" class="btn btn-primary btn-block">Login</button>
