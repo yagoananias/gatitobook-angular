@@ -38,6 +38,10 @@
     <app-mensagem
       *ngIf="novoUsuarioForm.get('userName')?.errors?.minusculo && novoUsuarioForm.get('userName')?.touched"
       mensagem="Somente letras minúsculas!">
+    </app-mensagem>
+    <app-mensagem
+      *ngIf="novoUsuarioForm.get('userName')?.errors?.usuarioExistente"
+      mensagem="Nome de usuário indisponível!">
 
     </app-mensagem>
   </div>
